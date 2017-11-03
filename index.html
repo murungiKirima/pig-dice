@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Pig Dice</title>
+  </head>
+  <body class="overlay">
+    <!-- Start of header page -->
+    <div class="container header">
+      <div class="jumbotron">
+        <h1>If you dare to Pig Dice!!</h1>
+          <form>
+              <div>
+                <label for="player1Name"><h2>Player 1 Name</h2></label>
+                <input required class="player1Name form-control" type="text">
+              </div>
+          </form>
+          <form>
+              <div>
+                <label for="player1Name"><h2>Player 2 Name</h2></label>
+                <input required class="player2Name form-control" type="text">
+              </div>
+          </form><br>
+         <button class="btn-success btn">Play Game</button>
+      </div>
+    </div>
+<!-- End of header page  -->
+
+<div class="container header">
+    <div class="jumbotron">
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Player 1: <span id = "player1Name"><span></h2>
+            <div class="wrap">
+   			<div id="dice" class="dice dice_1"></div>
+        </div>
+        <p id="result">Please click above dice!</p>
+        </div>
+        <!-- <div class="col-md-4 spin">
+          <div class="stage">
+            <div class="cubespinner">
+              <div class="face1">::</div>
+              <div class="face2">.:</div>
+              <div class="face3">:</div>
+              <div class="face4">.</div>
+              <div class="face5">::.</div>
+              <div class="face6">:::</div>
+            </div>
+          </div>
+        </div> -->
+        <div class="col-md-4">
+          <h2>Player 2: <span id = "player2Name"><span></h2>
+              <button id="player2-roll" class="btn-success btn">Roll</button>
+              <button id="player2-hold" class="btn-success btn">Hold</button>
+            <h2>Dice Roll: <span id="die-roll-2"></span></h2>
+            <p>Total: <span id="round-total-2"></span></p>
+            <p>Score: <span id="total-score-2"></span></p>
+        </div>
+        <button class="btn-success btn">New Game</button>
+      </div>
+    </div>
+  </div>
+    <!-- <div class="jumbotron">
+        <button></button>
+        <div class="row">
+
+      </div>
+    </div> -->
+
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <p id="footer">copyright murungikirima@gmail.com</p>
+  </body>
+  <script src="js/jquery-3.2.1.js" charset="utf-8"></script>
+<script src="js/scripts.js" charset="utf-8"></script>
+</html>

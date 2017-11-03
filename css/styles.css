@@ -1,0 +1,194 @@
+.spin{
+  /*align-items: center;
+  text-align: center;*/
+  /*box-align: center;*/
+  /*background-image: url(../images/wall.jpg);*/
+  /*background-color: #808000;*/
+  /*background: blur(5px);*/
+  /*margin-left: 0;
+margin-right: 10px;
+/*float: none; */
+}
+.stage{
+  width: 120px;
+  height: 120px;
+  margin-top:30px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 30px;
+
+}
+@-webkit-keyframes spincube {
+  from,to  { -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+  16%      { -webkit-transform: rotateY(-90deg);                           }
+  33%      { -webkit-transform: rotateY(-90deg) rotateZ(90deg);            }
+  50%      { -webkit-transform: rotateY(-180deg) rotateZ(90deg);           }
+  66%      { -webkit-transform: rotateY(-270deg) rotateX(90deg);           }
+  83%      { -webkit-transform: rotateX(90deg);                            }
+}
+
+@keyframes spincube {
+  from,to {
+    -moz-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    -ms-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  16% {
+    -moz-transform: rotateY(-90deg);
+    -ms-transform: rotateY(-90deg);
+    transform: rotateY(-90deg);
+  }
+  33% {
+    -moz-transform: rotateY(-90deg) rotateZ(90deg);
+    -ms-transform: rotateY(-90deg) rotateZ(90deg);
+    transform: rotateY(-90deg) rotateZ(90deg);
+  }
+  50% {
+    -moz-transform: rotateY(-180deg) rotateZ(90deg);
+    -ms-transform: rotateY(-180deg) rotateZ(90deg);
+    transform: rotateY(-180deg) rotateZ(90deg);
+  }
+  66% {
+    -moz-transform: rotateY(-270deg) rotateX(90deg);
+    -ms-transform: rotateY(-270deg) rotateX(90deg);
+    transform: rotateY(-270deg) rotateX(90deg);
+  }
+  83% {
+    -moz-transform: rotateX(90deg);
+    -ms-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+  }
+}
+
+.cubespinner {
+  -webkit-animation-name: spincube;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 12s;
+
+  animation-name: spincube;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 12s;
+
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+
+  -webkit-transform-origin: 60px 60px 0;
+  -moz-transform-origin: 60px 60px 0;
+  -ms-transform-origin: 60px 60px 0;
+  transform-origin: 60px 60px 0;
+
+  align-items: center;
+  text-align: center;
+}
+
+.cubespinner div {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border: 1px solid #ccc;
+  background: rgba(255,255,255,0.8);
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
+  line-height: 120px;
+  text-align: center;
+  font-size: 100px;
+}
+
+.cubespinner .face1 {
+  -webkit-transform: translateZ(60px);
+  -moz-transform: translateZ(60px);
+  -ms-transform: translateZ(60px);
+  transform: translateZ(60px);
+}
+.cubespinner .face2 {
+  -webkit-transform: rotateY(90deg) translateZ(60px);
+  -moz-transform: rotateY(90deg) translateZ(60px);
+  -ms-transform: rotateY(90deg) translateZ(60px);
+  transform: rotateY(90deg) translateZ(60px);
+}
+.cubespinner .face3 {
+  -webkit-transform: rotateY(90deg) rotateX(90deg) translateZ(60px);
+  -moz-transform: rotateY(90deg) rotateX(90deg) translateZ(60px);
+  -ms-transform: rotateY(90deg) rotateX(90deg) translateZ(60px);
+  transform: rotateY(90deg) rotateX(90deg) translateZ(60px);
+}
+.cubespinner .face4 {
+  -webkit-transform: rotateY(180deg) rotateZ(90deg) translateZ(60px);
+  -moz-transform: rotateY(180deg) rotateZ(90deg) translateZ(60px);
+  -ms-transform: rotateY(180deg) rotateZ(90deg) translateZ(60px);
+  transform: rotateY(180deg) rotateZ(90deg) translateZ(60px);
+}
+.cubespinner .face5 {
+  -webkit-transform: rotateY(-90deg) rotateZ(90deg) translateZ(60px);
+  -moz-transform: rotateY(-90deg) rotateZ(90deg) translateZ(60px);
+  -ms-transform: rotateY(-90deg) rotateZ(90deg) translateZ(60px);
+  transform: rotateY(-90deg) rotateZ(90deg) translateZ(60px);
+}
+.cubespinner .face6 {
+  -webkit-transform: rotateX(-90deg) translateZ(60px);
+  -moz-transform: rotateX(-90deg) translateZ(60px);
+  -ms-transform: rotateX(-90deg) translateZ(60px);
+  transform: rotateX(-90deg) translateZ(60px);
+}
+
+/*.btn{
+  margin: 0;
+}*/
+.header{
+  margin: 50px;
+}
+.jumbotron{
+ text-align: center;
+ height: 90%;
+ background-image: url(../images/wall.jpg);
+ box-shadow:  0 8px 16px 0 rgba(0, 0, 0, 0.20), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+.console{
+  text-align: center;
+  height: 100%;
+  width: 90%;
+  padding-left: 5%;
+  padding-right: : 5%;
+  padding-top: 10%;
+  padding-bottom: 20%;
+  margin-bottom: 10%;
+   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.console1{
+  text-align: center;
+  height: 100%;
+  width: 90%;
+  padding-left: 5%;
+  padding-right: : 5%;
+  padding-top: 0%;
+  padding-bottom: 20%;
+  margin-bottom: 5%;
+   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#footer{
+  text-align: center;
+  padding: 10px;
+}
+
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
