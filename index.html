@@ -7,65 +7,69 @@
     <title>Pig Dice</title>
   </head>
   <body class="overlay">
+    <div class="jumbotron">
+    <br><br>
+       <button class="btn-success btn" id="start" width ="50%">Play Game</button>
+       <br>
+     </div>
     <!-- Start of header page -->
-    <div class="container header">
+    <div class="container header header1">
       <div class="jumbotron">
         <h1>If you dare to Pig Dice!!</h1>
 
           <form>
               <div>
                 <label for="player1Name"><h2>Player 1 Name</h2></label>
-                <input required class="player1Name form-control" type="text">
+                <input  id="player1" required class="player1Name form-control" type="text">
               </div>
           </form>
           <form>
               <div>
-                <label for="player1Name"><h2>Player 2 Name</h2></label>
-                <input required class="player2Name form-control" type="text">
+                <label for="player2Name"><h2>Player 2 Name</h2></label>
+                <input id="player2" required class="player2Name form-control" type="text">
               </div>
           </form><br>
          <button class="btn-success btn" id="btn-register">Save</button>
-         <button class="btn-success btn" id="start">Play Game</button>
 
       </div>
     </div>
 <!-- End of header page  -->
 
-<div class="container header">
-    <div class="jumbotron header1">
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Player 1: <span id = "player1-name"><span></h2>
-              <button id="player1-roll" class="btn-success btn">Roll</button>
-              <button id="player1-hold" class="btn-success btn">Hold</button>
-            <h2>Dice Roll: <span id="die-roll-1"></span></h2>
-            <p>Total: <span id="round-total-1"></span></p>
-            <p>Score: <span id="total-score-1"></span></p>
-        </div>
-        <div class="col-md-4 spin">
-          <div class="stage" style="width: 120px; height: 120px; margin:auto; margin-top:">
-            <div class="cubespinner">
-              <div class="face1">M</div>
-              <div class="face2">M</div>
-              <div class="face3">M</div>
-              <div class="face4">M</div>
-              <div class="face5">M</div>
-              <div class="face6">M</div>
+    <div class="container header2">
+        <div class="jumbotron ">
+          <div class="row">
+            <div class="col-md-4">
+              <h2>Player 1: <span id = "player1-name"><span></h2>
+                  <button id="player1-roll" class="btn-success btn">Roll</button>
+                  <button id="player1-hold" class="btn-success btn">Hold</button>
+                <h2>Dice Roll: <span id="die-roll-1"></span></h2>
+                <p>Total: <span id="round-total-1"></span></p>
+                <p>Score: <span id="total-score-1"></span></p>
             </div>
+            <div class="col-md-4 spin">
+              <div class="stage" style="width: 120px; height: 120px; margin:auto; margin-top:">
+                <div class="cubespinner">
+                  <div class="face1">1</div>
+                  <div class="face2">2</div>
+                  <div class="face3">3</div>
+                  <div class="face4">4</div>
+                  <div class="face5">5</div>
+                  <div class="face6">6</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <h2>Player 2: <span id = "player2-Name"><span></h2>
+                  <button id="player2-roll" class="btn-success btn">Roll</button>
+                  <button id="player2-hold" class="btn-success btn">Hold</button>
+                <h2>Dice Roll: <span id="die-roll-2"></span></h2>
+                <p>Total: <span id="round-total-2"></span></p>
+                <p>Score: <span id="total-score-2"></span></p>
+            </div>
+
           </div>
         </div>
-        <div class="col-md-4">
-          <h2>Player 2: <span id = "player2Name"><span></h2>
-              <button id="player2-roll" class="btn-success btn">Roll</button>
-              <button id="player2-hold" class="btn-success btn">Hold</button>
-            <h2>Dice Roll: <span id="die-roll-2"></span></h2>
-            <p>Total: <span id="round-total-2"></span></p>
-            <p>Score: <span id="total-score-2"></span></p>
-        </div>
-
       </div>
-    </div>
-  </div>
     <!-- <div class="jumbotron">
         <button></button>
         <div class="row">
