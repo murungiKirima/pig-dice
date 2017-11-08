@@ -140,6 +140,12 @@ margin-right: 10px;
 .header{
   margin: 50px;
 }
+.header1{
+  margin: 50px;
+  display: none;
+  /*z-index: 1000;
+  position: absolute;*/
+}
 .jumbotron{
  text-align: center;
  height: 90%;
